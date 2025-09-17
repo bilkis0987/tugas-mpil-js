@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh DOM JavaScript</title>
+</head>
+<body>
+
+    <h1 id="judul">Halo Dunia!</h1>
+    <button id="tombolUbah">Ubah Teks</button>
+
+    <script>
+        // Mengambil elemen berdasarkan ID
+        const judul = document.getElementById('judul');
+        const tombol = document.getElementById('tombolUbah');
+
+        // Menambahkan event listener ke tombol
+        tombol.addEventListener('click', function() {
+            // Mengubah konten teks dari elemen h1
+            judul.textContent = 'Teks berhasil diubah!';
+        });
+    </script>
+
+</body>
+</html>
